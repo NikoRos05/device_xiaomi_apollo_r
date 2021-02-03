@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 PixelExperience
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -21,8 +21,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollopro
-TARGET_RECOVERY_DEVICE_MODULES := libinit_apollopro
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
+TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
 
 # Kernel
 ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)

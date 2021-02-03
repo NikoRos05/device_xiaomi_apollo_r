@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 PixelExperience
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -10,7 +10,7 @@ $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-arrow
+    $(LOCAL_PATH)/overlay-aosp
 
 # Overlays -- Override vendor ones
 PRODUCT_PACKAGES += \

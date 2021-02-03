@@ -124,10 +124,11 @@ void vendor_load_properties() {
     std::string product_model;
     product_model = GetProperty("ro.product.odm.model", "");
 
-    set_ro_build_prop(source, "fingerprint",
-                              "google/sunfish/sunfish:11/RQ1A.201205.008/6943376:user/release-keys");
-    set_ro_product_prop(source, "brand", "Xiaomi");
-    set_ro_product_prop(source, "device", "apollo");
+    for (const auto &source : ro_props_default_source_order) {
+        set_ro_product_prop(source, "brand", "Xiaomi");
+        set_ro_product_prop(source, "device", "apollo");
+        set_ro_product_prop(source, "model", "Mi 10T");
+    }
 
     if (product_model == "M2007J3SY") {
         for (const auto &source : ro_props_default_source_order) {
